@@ -11,6 +11,6 @@ Most implementations treat c as a constant, requiring users to manually enter va
 
 here is a visual representation :
 
-https://jmp.sh/s/lgMtbM3yp4sSHHtY3t89
+![ezgif-4-1783e12d77](https://github.com/user-attachments/assets/97285f48-0552-4df3-a458-287957f6c549)
 
 the cursor doesnt appear cuz my recording software is acting weird :p
