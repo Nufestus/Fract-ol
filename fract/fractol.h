@@ -6,7 +6,7 @@
 /*   By: aammisse <aammisse@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/17 15:26:07 by aammisse          #+#    #+#             */
-/*   Updated: 2025/01/20 22:51:51 by aammisse         ###   ########.fr       */
+/*   Updated: 2025/01/14 14:43:43 by aammisse         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -83,8 +83,6 @@ typedef struct s_julia
 
 typedef struct s_data
 {
-	double mouse_re;
-	double mouse_im;
 	int		color;
 	char	*name;
 	void	*mlx;
@@ -110,7 +108,7 @@ t_value	sum_complex(t_value z1, t_value z2);
 t_value	sqrt_complex(t_value z);
 double	ft_atod(char *str);
 int		fractal_render(t_data *data);
-int		handlemouse(int x, int y, t_data *data);
+int		handlemouse(int button, int x, int y, t_data *data);
 int		handlekey(int keycode, t_data *data);
 void	mandelbrot(int x, int y, t_data *data);
 void	julia(int x, int y, t_data *data);

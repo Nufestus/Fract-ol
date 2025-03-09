@@ -6,7 +6,7 @@
 /*   By: aammisse <aammisse@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/08 11:22:10 by aammisse          #+#    #+#             */
-/*   Updated: 2025/01/20 22:37:16 by aammisse         ###   ########.fr       */
+/*   Updated: 2025/01/14 14:30:49 by aammisse         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,8 +61,8 @@ void	julia(int x, int y, t_data *data)
 	n = 0;
 	z.x = (scale(x, -2, 2, WINDOW_WIDTH) * data->zoom) + data->shiftx;
 	z.y = (scale(y, 2, -2, WINDOW_HEIGHT) * data->zoom) + data->shifty;
-	c.x = data->mouse_re;
-	c.y = data->mouse_im;
+	c.x = data->value.x;
+	c.y = data->value.y;
 	while (n < data->iteration)
 	{
 		z = sum_complex(sqrt_complex(z), c);
